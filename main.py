@@ -56,8 +56,8 @@ def ejecutar_turno(nombre_jugador, planilla):
             print("¡INCREÍBLE! ¡GENERALA REAL!")
             return dados, 1, True
             
-        opcion = input("¿Mantener dados y volver a tirar? (s/n): ").lower()
-        if opcion != 's': break
+        opcion = input("¿Mantener dados y volver a tirar? (si/no): ").lower()
+        if opcion != 'si': break
         
         print("Posiciones a conservar (ej: 0 2 4):")
         indices = input("> ").split()
@@ -120,3 +120,4 @@ def jugar_generala():
 
 if __name__ == "__main__":
     jugar_generala()
+    
